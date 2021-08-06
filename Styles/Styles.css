@@ -59,7 +59,6 @@ html, body, .holster {
 	display: flex;
 	flex-wrap: wrap;
 	align-content: space-between;
-	padding: 10px;
 }
 .logo {
 	font-family: 'Ubuntu', sans-serif;
@@ -71,6 +70,7 @@ html, body, .holster {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	text-align: left;
+	padding: 5px;
 }
 span {
 	color: #E42B50;
@@ -80,6 +80,7 @@ span {
 	font-size: 25px;
 	text-shadow: none;
 	text-align: left;
+	padding: 10px;
 }
 .text-2{
 	font-size: 3.5em;
@@ -88,6 +89,10 @@ span {
 	font-family: 'Ubuntu', sans-serif;
 	text-align: center;
 	font-variant: small-caps;
+	padding: 10px;
+}
+p{
+	padding: 5px;
 }
 #softskill , #Langues , #centresdinteret , #contact{
 	display: flex;
@@ -104,4 +109,13 @@ span {
 	background-position: center;
 	background-size: cover;
 	width: 100%;
+}
+h2{
+	color: #E42B50;
+}
+#softskill ul {
+	text-align: left;
+}
+#softskill ul li {
+	padding: 5px;
 }
