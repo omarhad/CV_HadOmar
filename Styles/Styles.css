@@ -134,7 +134,7 @@ h2{
     transition: 0.4s linear;  
     transition-property: width, background-color;
 }
-/* @keyframes progressAnimation {
+@keyframes progressAnimation {
 	0%   { width: 5%; background-color: #F9BCCA;}
 	100% { width: 100%; background-color: #E42B50; }
 	
@@ -148,7 +148,7 @@ h2{
 	0%   { width: 5%; background-color: #F9BCCA;}
 	100% { width: 50%; background-color: #E42B50; }
 	
-  } */
+  }
   #Langues .line::before{
     content: "";
     position: absolute;
@@ -158,7 +158,7 @@ h2{
     top: 0;
     background: #E42B50;
 }
- /* #Langues .Francais::before{
+ #Langues .Francais::before{
 	width: 100%;
     animation: progressAnimation 2s;
 }
@@ -169,7 +169,7 @@ h2{
 #Langues .Arabe::before{
 	width: 100%;
     animation: progressAnimation 2s;
-} */
+}
 #Langues span{
 	color: white;
 }
