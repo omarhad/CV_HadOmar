@@ -58,7 +58,7 @@ html, body, .holster {
 	text-align: left;
 	display: flex;
 	flex-wrap: wrap;
-	align-content: space-between;
+	align-content: space-around;
 }
 .logo {
 	font-family: 'Ubuntu', sans-serif;
@@ -102,15 +102,17 @@ p{
 	font-size: 18px;
 	font-weight: 600;
 	color: #ffffff;
+	height: 50%;
+	background-color: rgba(255, 255, 255, 0.2);
+	margin-top: auto;
+	margin-bottom: auto;
 }
 #Information {
 	background-image: url("../Images/shutterstock_407554567.jpg");
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
-	width: 100%;
 }
-<<<<<<< HEAD
 h2{
 	color: #E42B50;
 }
@@ -120,5 +122,3 @@ h2{
 #softskill ul li {
 	padding: 5px;
 }
-=======
->>>>>>> e47a6ee41a0143bc6fa70ff1720b7dafb939e318
