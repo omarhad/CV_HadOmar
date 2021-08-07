@@ -1,14 +1,12 @@
 <!doctype html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>CV_HadOmar</title>
-<link href="Styles/Styles.css" rel="stylesheet" type="text/css">
-<meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
-      </head>
+	<meta charset="UTF-8">
+	<title>CV_HadOmar</title>
+	<link href="Styles/Styles.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="./node_modules/sal.js/dist/sal.css"> 
+	<meta charset="UTF-8">
+</head>
 
 <body>
 	<div class="holster">
@@ -19,19 +17,37 @@
 					<span>vitae
 					</span>
 				</div>
-				<div class="text-1 animate__animated animate__fadeInLeft">Hi, my name is
+				<div class="text-1 "
+					data-sal-duration="1200"
+					data-sal="slide-up"
+					data-sal-delay="300"
+					data-sal-easing="ease-out-bouce"
+					data-sal-repeat="once"
+				>Hi, my name is
 				</div>
 				<div class="text-2">Oussama Hadrami
 				</div>
 				<p>Passionné de nouvelles technologies et créatif, je suis autonome et rigoureux, organisé, persévérant et fournit un travail d'une qualité tout en faisant preuve d’adaptabilité.
 				</p>
-				<div class="text-3 animate__animated animate__bounce animate__delay-0.5s">And I'm a 
+				<div class="text-3"
+					data-sal-duration="1200"
+					data-sal="slide-down"
+					data-sal-delay="600"
+					data-sal-easing="ease-out-bouce"
+					data-sal-repeat="once"
+				>And I'm a 
 					<span>Developer</span>
 				</div>
 			</div>
-			<div id="Information">
+			<div id="Information" data-sal="fade">
 				<div class="container x mandatory-scroll-snapping" dir="ltr">
-					<div id="softskill">
+					<div id="softskill"
+						data-sal-duration="1200"
+						data-sal="zoom-out"
+						data-sal-delay="300"
+						data-sal-easing="ease-out-bouce"
+						data-sal-repeat="once"
+					>
 					   <h2>Atouts
 					   </h2>
 					   <ul>
@@ -49,7 +65,13 @@
 						   </li>
 					   </ul>
 					</div>
-					<div id="Langues">
+					<div id="Langues"
+						data-sal-duration="1200"
+						data-sal="zoom-out"
+						data-sal-delay="300"
+						data-sal-easing="ease-out-bouce"
+						data-sal-repeat="once"
+					>
 					   <h2>Langues
 					   </h2>
 					   <div class="bars">
@@ -77,7 +99,13 @@
 							</div>
 						</div>
 					</div>
-					<div id="centresdinteret">
+					<div id="centresdinteret"
+						data-sal-duration="1200"
+						data-sal="zoom-out"
+						data-sal-delay="300"
+						data-sal-easing="ease-out-bouce"
+						data-sal-repeat="once"
+					>
 						<h2>Centres d'intérêt
 						</h2>
 						<p>Robotique
@@ -87,7 +115,13 @@
 						<p>Aïkido
 						</p>
 					</div>
-					<div id="contact">
+					<div id="contact"
+						data-sal-duration="1200"
+						data-sal="zoom-out"
+						data-sal-delay="300"
+						data-sal-easing="ease-out-bouce"
+						data-sal-repeat="once"
+					>
 					</div>
 				</div>
 			</div>
@@ -182,5 +216,15 @@
 		</div>
 	</div>
 
+
+	<script src="./node_modules/sal.js/dist/sal.js"></script>
+	<script>
+		sal(
+			{
+  			threshold: 0.5,
+  			once: true,
+			}
+		);
+	</script>
 </body>
 </html>

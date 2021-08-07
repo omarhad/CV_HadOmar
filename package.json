@@ -1,0 +1,23 @@
+{
+  "name": "cv_hadomar",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/omarhad/CV_HadOmar.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/omarhad/CV_HadOmar/issues"
+  },
+  "homepage": "https://github.com/omarhad/CV_HadOmar#readme",
+  "dependencies": {
+    "sal.js": "^0.8.5"
+  }
+}

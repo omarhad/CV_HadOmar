@@ -103,7 +103,6 @@ p{
 	font-weight: 600;
 	color: #ffffff;
 	height: 50%;
-	background-color: rgba(255, 255, 255, 0.2);
 	margin-top: auto;
 	margin-bottom: auto;
 }
@@ -122,3 +121,56 @@ h2{
 #softskill ul li {
 	padding: 5px;
 }
+#Langues .line{
+    height: 5px;
+    width: 60%;
+    background: #D4CFD0;
+	align-content: center;
+    position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 2.5px;
+	box-shadow: 1.5px 1px  rgba(255, 255, 255, 0.5);
+    transition: 0.4s linear;  
+    transition-property: width, background-color;
+}
+/* @keyframes progressAnimation {
+	0%   { width: 5%; background-color: #F9BCCA;}
+	100% { width: 100%; background-color: #E42B50; }
+	
+  }
+  @keyframes progressAnimation1 {
+	0%   { width: 5%; background-color: #F9BCCA;}
+	100% { width: 80%; background-color: #E42B50; }
+	
+  }
+  @keyframes progressAnimation2 {
+	0%   { width: 5%; background-color: #F9BCCA;}
+	100% { width: 50%; background-color: #E42B50; }
+	
+  } */
+  #Langues .line::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background: #E42B50;
+}
+ /* #Langues .Francais::before{
+	width: 100%;
+    animation: progressAnimation 2s;
+}
+#Langues .Anglais::before{
+	width: 50%;
+    animation: progressAnimation2 2s;
+}
+#Langues .Arabe::before{
+	width: 100%;
+    animation: progressAnimation 2s;
+} */
+#Langues span{
+	color: white;
+}
+
