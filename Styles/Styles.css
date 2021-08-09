@@ -3,17 +3,23 @@
 html, body, .holster {
   height: 100%;
 }
+
 .holster {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-flow: column nowrap;
-  font-family: monospace;
+	background-image: url("../Images/shutterstock_407554567.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-flow: column nowrap;
+	font-family: monospace;
+	color: white;
 }
 .container {
-  display: flex;
-  overflow: auto;
-  flex: none;
+	display: flex;
+	overflow: auto;
+	flex: none;
 }
 .container.y {
   width: 100%;
@@ -24,28 +30,16 @@ html, body, .holster {
 	width: 100%;
 	height: 100%;
 	flex-flow: row nowrap;
-}  
-/* scroll-snap */
-.y.mandatory-scroll-snapping {
-  scroll-snap-type: y mandatory;
 }
-.x.mandatory-scroll-snapping {
-	scroll-snap-type: x mandatory;
+span {
+	color: #E42B50;
+	text-shadow: none;
 }
-.container > div {
-  text-align: center;
-  scroll-snap-align: center;
-  flex: none;
+h2{
+	color: #E42B50;
 }
-.y.container > div {
-  width: 100%;
-  height: 100%;
-}
-.x.container > div {
-	width: 100%;
-	height: 100%;
-  }
-  
+
+/* presentation section style */
 #presentation{
 	background-image: url("../Images/abstract-pride-black-4k-ipad-air-wallpaper-ilikewallpaper_com.jpg");
 	background-repeat: no-repeat;
@@ -53,25 +47,15 @@ html, body, .holster {
 	background-size: cover;
 	font-size: 18px;
 	font-weight: 600;
-	color: #ffffff;
 	text-shadow: 2px 2px 2px rgb(102, 0, 0);
 	text-align: left;
 	display: flex;
 	flex-wrap: wrap;
 	align-content: space-around;
-}
-#competence{
-	background-image: url("../Images/R3e51e1cec59cf228b195761525322597.png");
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
-	color: #ffffff;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
 	
 }
 .logo {
+	width: 100%;
 	font-family: 'Ubuntu', sans-serif;
 	font-size: 2em;
 	font-weight: 600;
@@ -83,11 +67,8 @@ html, body, .holster {
 	text-align: left;
 	padding: 5px;
 }
-span {
-	color: #E42B50;
-	text-shadow: none;
-}
 .text-1{
+	width: 100%;
 	font-size: 25px;
 	text-shadow: none;
 	text-align: left;
@@ -102,9 +83,9 @@ span {
 	font-variant: small-caps;
 	padding: 10px;
 }
-p{
-	padding: 5px;
-}
+
+/* Information section style */
+
 #softskill , #Langues , #centresdinteret , #contact {
 	display: flex;
 	flex-flow: column nowrap;
@@ -112,52 +93,18 @@ p{
 	padding: 10px;
 	font-size: 18px;
 	font-weight: 600;
-	color: #ffffff;
 	height: 50%;
 	margin-top: auto;
 	margin-bottom: auto;
-}
-
-#competence .container{
-	height: 50%;
-	margin-top: auto;
-	margin-bottom: auto;
-
-}
-#competence p{
-	background-color: rgba(255, 255, 255, 0.493);
-	width: 70%;
-	padding: 5px;
-	margin: auto;
-}
-#Information {
-	background-image: url("../Images/shutterstock_407554567.jpg");
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
-}
-#diplome{
-	background-image: url("../Images/R3e51e1cec59cf228b195761525322597.png");
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
-	display: flex;
-	flex-wrap: wrap;
-	align-content: space-around;
-	color: #ffffff;
-}
-
-
-h2{
-	color: #E42B50;
-}
-#softskill ul {
-	text-align: left;
 }
 #softskill ul li {
 	padding: 5px;
 }
-#Langues .line{
+#softskill ul{
+	list-style-type: none;
+}
+
+#Langues .line{/* progress bar */
     height: 5px;
     width: 60%;
     background: #D4CFD0;
@@ -209,7 +156,66 @@ h2{
 #Langues span{
 	color: white;
 }
+
 #contact ul{
 	list-style-type: none;
-	text-align: left;
 }
+
+/* diplome section style */
+#diplome{
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	color: #ffffff;
+}
+
+/* competence section style */
+#competence{
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	padding-top: 10%;
+}
+.comp{
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	font-size: 16px;
+	font-weight: 600;
+	height: 50%;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
+
+/* scroll-snap */
+.y.mandatory-scroll-snapping {
+  scroll-snap-type: y mandatory;
+}
+.x.mandatory-scroll-snapping {
+	scroll-snap-type: x mandatory;
+}
+.container > div {
+  text-align: center;
+  scroll-snap-align: center;
+  flex: none;
+}
+.y.container > div {
+  width: 100%;
+  height: 100%;
+}
+.x.container > div {
+	width: 100%;
+	height: 100%;
+}
+  
+
+
+
+
+
+
+
+  
+
+
