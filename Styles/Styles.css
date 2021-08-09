@@ -60,6 +60,17 @@ html, body, .holster {
 	flex-wrap: wrap;
 	align-content: space-around;
 }
+#competence{
+	background-image: url("../Images/R3e51e1cec59cf228b195761525322597.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	color: #ffffff;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	
+}
 .logo {
 	font-family: 'Ubuntu', sans-serif;
 	font-size: 2em;
@@ -94,7 +105,7 @@ span {
 p{
 	padding: 5px;
 }
-#softskill , #Langues , #centresdinteret , #contact{
+#softskill , #Langues , #centresdinteret , #contact {
 	display: flex;
 	flex-flow: column nowrap;
 	justify-content: center;
@@ -106,12 +117,37 @@ p{
 	margin-top: auto;
 	margin-bottom: auto;
 }
+
+#competence .container{
+	height: 50%;
+	margin-top: auto;
+	margin-bottom: auto;
+
+}
+#competence p{
+	background-color: rgba(255, 255, 255, 0.493);
+	width: 70%;
+	padding: 5px;
+	margin: auto;
+}
 #Information {
 	background-image: url("../Images/shutterstock_407554567.jpg");
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
 }
+#diplome{
+	background-image: url("../Images/R3e51e1cec59cf228b195761525322597.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	display: flex;
+	flex-wrap: wrap;
+	align-content: space-around;
+	color: #ffffff;
+}
+
+
 h2{
 	color: #E42B50;
 }
@@ -173,4 +209,7 @@ h2{
 #Langues span{
 	color: white;
 }
-
+#contact ul{
+	list-style-type: none;
+	text-align: left;
+}
