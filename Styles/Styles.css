@@ -53,6 +53,7 @@ h2{
 	display: flex;
 	flex-wrap: wrap;
 	align-content: space-around;
+	-webkit-text-size-adjust: none;
 	
 }
 .logo {
