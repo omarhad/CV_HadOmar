@@ -4,9 +4,49 @@
 html, body, .holster {
 	height: 100%;
 	-webkit-text-size-adjust: none;
+	transition: 0.2s linear;
 }
-
-.holster {
+/* bouton dark mode */
+.nuit  {
+	position: absolute;
+	right: 1rem;
+	top: 1rem;
+}
+.checkbox{
+	display: none;
+}
+.label{
+	height: 26px;
+	width: 50px;
+	background: rgba(29, 29, 29, 0.8);
+	padding: 5px 8px;
+	border-radius: 50px;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	position: relative; 
+	transform: scale(1.2);
+	box-shadow: 1px 1px 1px #ffffff;
+}
+.label .ball{
+	background-color: #aaaaaa;
+	border-radius: 50%;
+	height: 26px;
+	width: 26px;
+	position: absolute;
+	top: 5px;
+	left: 4px;
+	transform: translateX(0px);
+	transition: transform 0.4s cubic-bezier(.45, -1.12, .35,1.78);
+}
+.checkbox:checked + .label .ball {
+	transform: translateX(29px);
+}
+.bxs-moon{
+	color: rgb(29, 29, 29);
+}
+.holster{
 	background-image: url("../Images/shutterstock_407554567.jpg");
 	background-repeat: no-repeat;
 	background-position: center;
@@ -64,14 +104,13 @@ a:active {
 
 /* presentation section style */
 #presentation{
-	background-image: url("../Images/abstract-pride-black-4k-ipad-air-wallpaper-ilikewallpaper_com.jpg");
+	/* background-image: url("../Images/abstract-pride-black-4k-ipad-air-wallpaper-ilikewallpaper_com.jpg");
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
-	background-attachment: fixed;
-	font-weight: 600;
-	text-shadow: 2px 2px 2px rgb(102, 0, 0);
+	text-shadow: 2px 2px 2px rgb(102, 0, 0); */
 	text-align: left;
+	font-weight: 400;
 	display: flex;
 	flex-flow: column nowrap;
 	justify-content: space-around;
@@ -81,7 +120,7 @@ a:active {
 	width: 100%;
 	font-family: 'Ubuntu', sans-serif;
 	font-weight: 600;
-	font-size: 2.5rem;
+	font-size: 2rem;
 	color: #ffffff;
 	box-sizing: border-box;
 	text-shadow: none;
@@ -126,10 +165,12 @@ a:active {
 #softskill ul{
 	list-style-type: none;
 }
-
+.bars{
+	padding: 10px;
+}
 #Langues .line{/* progress bar */
     height: 5px;
-    width: 60%;
+    width: 35%;
     background: #D4CFD0;
 	align-content: center;
     position: relative;
@@ -267,4 +308,29 @@ a:active {
 .x.container > div {
 	width: 100%;
 	height: 100%;
+}
+/* dark mode */
+.jour{
+	background-image: url("../Images/imageonline-co-invertedimage.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-flow: column nowrap;
+	font-family: monospace;
+	color: white;
+	color: rgb(29, 29, 29);
+}
+
+.jour .label {
+	box-shadow: 1px 1px 1px #000000;
+	background-color: #a7a7a7ee;
+}
+.jour .logo , .jour #Langues span , .jour #presentaion , .jour #diplome{
+	color: rgb(29, 29, 29);
+}
+.jour .label .ball{
+	background-color: rgba(29, 29, 29, 0.904);
 }
