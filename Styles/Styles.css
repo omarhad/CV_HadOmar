@@ -172,7 +172,7 @@ a:active {
 #Langues .Arabe::before{
 	width: 100%;
     animation: progressAnimation 2s;
-}
+}/* progress bar */
 #Langues span{
 	color: white;
 }
