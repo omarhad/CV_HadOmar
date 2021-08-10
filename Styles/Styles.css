@@ -87,7 +87,7 @@ a:link {
 	color: #ffffff;
 }
 a:visited {
-	color: #969696;
+	color: #720017;
 }
 a:focus {
 	border-bottom: 1px solid;
@@ -333,4 +333,14 @@ a:active {
 }
 .jour .label .ball{
 	background-color: rgba(29, 29, 29, 0.904);
+}
+.jour a:link {
+	color: rgb(29, 29, 29);
+}
+.jour a:visited {
+	color: #720017;
+}
+.jour a:focus {
+	border-bottom: 1px solid;
+	background: #rgb(29, 29, 29);
 }
