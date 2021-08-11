@@ -113,7 +113,8 @@ a:active {
 	display: flex;
 	flex-flow: column nowrap;
 	justify-content: space-around;
-	font-size: 1.2em;
+	font-size: 1em;
+	height: 100vh;
 }
 .logo {
 	width: 100%;
@@ -217,17 +218,17 @@ a:active {
 .reveal-visible .Francais::before{
 	width: 100%;
     animation: progressAnimation 2s;
-	animation-delay: 600ms;
+	animation-delay: 800ms;
 }
 .reveal-visible .Anglais::before{
 	width: 50%;
     animation: progressAnimation2 2s;
-	animation-delay: 600ms;
+	animation-delay: 800ms;
 }
 .reveal-visible .Arabe::before{
 	width: 100%;
     animation: progressAnimation 2s;
-	animation-delay: 600ms;
+	animation-delay: 800ms;
 }/* progress bar */
 #Langues span{
 	color: white;
@@ -389,5 +390,10 @@ a:active {
 @media (min-width: 890px){
 	body {
 		font-size: 1.5em;
+	}
+}
+@media (min-width: 390px){
+	body {
+		font-size: 1em;
 	}
 }
