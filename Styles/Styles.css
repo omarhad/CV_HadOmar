@@ -6,6 +6,65 @@ html, body, .holster {
 	-webkit-text-size-adjust: none;
 	transition: 0.2s linear;
 }
+
+.holster{
+	background-image: url("../Images/shutterstock_407554567.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-flow: column nowrap;
+	font-family: monospace;
+	color: white;
+}
+.container {
+	display: flex;
+	overflow: auto;
+	flex: none;
+}
+.container.y {
+	width: 100%;
+	height: 100%;
+	flex-flow: column nowrap;
+}
+.container.x {
+	width: 100%;
+	height: 100%;
+	flex-flow: row nowrap;
+}
+span {
+	color: #E42B50;
+	text-shadow: none;
+}
+h2{
+	color: #E42B50;
+}
+p {
+	font-weight: 800;
+}
+a {
+	text-decoration: none;
+}
+a:link {
+	color: #ffffff;
+}
+a:visited {
+	color: #720017;
+}
+a:focus {
+	border-bottom: 1px solid;
+	background: #80837d;
+}
+a:hover {
+	border-bottom: 1px solid;
+	color: #E42B50;
+}
+a:active {
+	background: #265301;
+	color: #720017;
+}
 /* bouton dark mode */
 #nuit  {
 	position: absolute;
@@ -45,61 +104,6 @@ html, body, .holster {
 }
 .bxs-moon{
 	color: rgb(233, 233, 233);
-}
-.holster{
-	background-image: url("../Images/shutterstock_407554567.jpg");
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	flex-flow: column nowrap;
-	font-family: monospace;
-	color: white;
-}
-.container {
-	display: flex;
-	overflow: auto;
-	flex: none;
-}
-.container.y {
-	width: 100%;
-	height: 100%;
-	flex-flow: column nowrap;
-}
-.container.x {
-	width: 100%;
-	height: 100%;
-	flex-flow: row nowrap;
-}
-span {
-	color: #E42B50;
-	text-shadow: none;
-}
-h2{
-	color: #E42B50;
-}
-a {
-	text-decoration: none;
-}
-a:link {
-	color: #ffffff;
-}
-a:visited {
-	color: #720017;
-}
-a:focus {
-	border-bottom: 1px solid;
-	background: #80837d;
-}
-a:hover {
-	border-bottom: 1px solid;
-	color: #E42B50;
-}
-a:active {
-	background: #265301;
-	color: #720017;
 }
 
 /* presentation section style */
@@ -375,10 +379,10 @@ a:active {
 	justify-content: space-around;  
 	align-items: center ;
 }
-.clonne {
-	width: 90%;
+.colonne {
+	width: 80%;
 }
-.colonneDirection{
+.coloneDirection{
 	width: 10%;
 }
 @media (min-width: 890px){
