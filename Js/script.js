@@ -4,7 +4,7 @@ darkMode.addEventListener('change', ()=>{
     document.getElementById('main').classList.toggle('jour');
 }
 )
-const ratio = .8
+const ratio = .5
 const options = {
     root: null,
     rootMargin: '0px',
@@ -14,7 +14,7 @@ const options = {
 const handelIntersect = function (entries, observer) {
     entries.forEach(function (entry) {
         if (entry.intersectionRatio > ratio) {
-            entry.target.classList.add('reveal-visible')
+            entry.target.classList.toggle('reveal-visible')
             observer.unobserve(entry.target)
         }
     })

@@ -7,7 +7,7 @@ html, body, .holster {
 	transition: 0.2s linear;
 }
 /* bouton dark mode */
-.nuit  {
+#nuit  {
 	position: absolute;
 	right: 1em;
 	top: 1em;
@@ -20,7 +20,7 @@ html, body, .holster {
 	width: 50px;
 	background: rgba(29, 29, 29, 0.8);
 	padding: 5px 8px;
-	border-radius: 50px;
+	border-radius: 5px;
 	cursor: pointer;
 	display: flex;
 	align-items: center;
@@ -104,11 +104,6 @@ a:active {
 
 /* presentation section style */
 #presentation{
-	/* background-image: url("../Images/abstract-pride-black-4k-ipad-air-wallpaper-ilikewallpaper_com.jpg");
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
-	text-shadow: 2px 2px 2px rgb(102, 0, 0); */
 	text-align: left;
 	font-weight: 400;
 	display: flex;
@@ -163,12 +158,11 @@ a:active {
 	display: flex;
 	flex-flow: column nowrap;
 	justify-content: center;
-	padding: 10px;
 	font-weight: 600;
 	height: 50%;
 	margin-top: auto;
 	margin-bottom: auto;
-	font-size: 1.3em;
+	font-size: 1em;
 }
 #softskill ul{
 	padding-left: 0px;
@@ -184,7 +178,7 @@ a:active {
 }
 #Langues .line{/* progress bar */
     height: 5px;
-    width: 35%;
+    width: 60%;
     background: #D4CFD0;
 	align-content: center;
     position: relative;
@@ -370,10 +364,25 @@ a:active {
 
 .reveal{
 	opacity: 0;
-	transform: translateY(-30px);
 }
 .reveal-visible {
 	opacity: 1;
-	transform: translateY(0);
 	transition-duration: 1s;
+}
+/* direction */
+.direction {
+	display: flex;
+	justify-content: space-around;  
+	align-items: center ;
+}
+.clonne {
+	width: 90%;
+}
+.colonneDirection{
+	width: 10%;
+}
+@media (min-width: 890px){
+	body {
+		font-size: 1.5em;
+	}
 }
