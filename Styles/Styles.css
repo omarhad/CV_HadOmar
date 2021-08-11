@@ -371,7 +371,7 @@ a:active {
 }
 .reveal-visible {
 	opacity: 1;
-	transition-duration: 1s;
+	transition-duration: .5;
 }
 /* direction */
 .direction {
