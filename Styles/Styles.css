@@ -158,7 +158,9 @@ a:active {
 }
 
 /* Information section style */
-
+#Iformation {
+	margin: 0px;
+}
 #softskill , #Langues , #centresdinteret , #contact {
 	display: flex;
 	flex-flow: column nowrap;
@@ -229,7 +231,8 @@ a:active {
 	width: 100%;
     animation: progressAnimation 2s;
 	animation-delay: 800ms;
-}/* progress bar */
+}
+/* progress bar */
 #Langues span{
 	color: white;
 }
@@ -294,7 +297,6 @@ a:active {
 
 .icons{
     display: flex;
-	flex-flow: nowrap;
 	justify-content: center;  
 }
 .links{
@@ -387,12 +389,18 @@ a:active {
 .coloneDirection{
 	width: 10%;
 }
+.bx-left-arrow-alt {
+	font-size: 1.8em;
+}
+.bx-right-arrow-alt {
+	font-size: 1.8em;
+}
 @media (min-width: 890px){
 	body {
-		font-size: 1.5em;
+		font-size: 1.8em;
 	}
 }
-@media (min-width: 390px){
+@media (max-width: 390px){
 	body {
 		font-size: 1em;
 	}
